@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-dark-gray: #1A1A1A;
+  --color-medium-gray: #2D2D2D;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-gray text-white antialiased;
+  }
+}
+
+.markdown-body {
+  @apply text-white leading-relaxed;
+}
+
+.markdown-body h1 { @apply text-2xl font-bold mb-4 text-gold; }
+.markdown-body h2 { @apply text-xl font-semibold mt-6 mb-3 text-gold; }
+.markdown-body p { @apply mb-4; }
+.markdown-body ul { @apply list-disc pl-6 mb-4; }
+.markdown-body li { @apply mb-2; }
+
